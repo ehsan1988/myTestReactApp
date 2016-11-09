@@ -7,10 +7,10 @@ app.use(function (req,res,next) {
         next();
     }
     else {
-        res.redirect('http://'+req.hostname+req.url);
+        res.redirect('http://'+ req.hostname+ req.url);
     }
 });
 app.use(express.static('public'));
-app.listen(3000, function () {
+app.listen(PORT, function () {
     console.log('express server is runing on port 3000');
 });
