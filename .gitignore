@@ -1,9 +1,3 @@
 node_modules/
 .idea/
-.idea/workspace.xml
-.idea/jsLibraryMappings.xml
-.idea/modules.xml
-.idea/test.iml
-.idea/vcs.xml
-.idea/watcherTasks.xml
-/.idea
+
