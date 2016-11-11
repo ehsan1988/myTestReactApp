@@ -24934,26 +24934,46 @@
 	var Nav = function Nav(props) {
 	    return React.createElement(
 	        'div',
-	        null,
+	        { className: 'top-bar' },
 	        React.createElement(
-	            'h3',
-	            null,
-	            'Nav component'
-	        ),
-	        React.createElement(
-	            IndexLink,
-	            { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	            'Get Weather'
-	        ),
-	        React.createElement(
-	            Link,
-	            { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	            'About'
-	        ),
-	        React.createElement(
-	            Link,
-	            { to: '/example', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
-	            'Example'
+	            'div',
+	            { className: 'top-bar-left' },
+	            React.createElement(
+	                'ul',
+	                { className: 'menu' },
+	                React.createElement(
+	                    'li',
+	                    { className: 'menu-text' },
+	                    'Application'
+	                ),
+	                React.createElement(
+	                    'li',
+	                    null,
+	                    React.createElement(
+	                        IndexLink,
+	                        { to: '/', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	                        'Get Weather'
+	                    )
+	                ),
+	                React.createElement(
+	                    'li',
+	                    null,
+	                    React.createElement(
+	                        Link,
+	                        { to: '/about', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	                        'About'
+	                    )
+	                ),
+	                React.createElement(
+	                    'li',
+	                    null,
+	                    React.createElement(
+	                        Link,
+	                        { to: '/example', activeClassName: 'active', activeStyle: { fontWeight: 'bold' } },
+	                        'Example'
+	                    )
+	                )
+	            )
 	        )
 	    );
 	};
